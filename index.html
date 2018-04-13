@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Aereolinea</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/vuelos.js"></script>
+  </head>
+
+  <body>
+     <section class="section-padding">
+      <div class="container">
+        <div class="row">
+          <h1 class="section-title">SISTEMA DE RESERVAS - AEREOLINEA</h1>
+        </div>
+        <div class="row">
+          <div id="menu1" class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <div class="about-text">
+                <h3><a>Consultar Vuelos</a></h3>
+                <p>Consulte los vuelos y horarios disponibles</p>
+                <a class="btn btn-common btn-rm" href="#" onclick="app.mostrarVuelos();">Consultar</a>
+              </div>
+            </div>
+          </div>
+          <div id="menu2" class="col-xs-12 col-md-6 col-lg-4">
+            <div class="about-item">
+              <div class="about-text">
+                <h3><a>Consultar Reservas</a></h3>
+                <p>Consulte sus reservas por número de cédular</p>
+                <input id="docConsulta" class="mb-20 form-control" name="cedula" placeholder="Ingresa tu número de cédula">
+                <a class="btn btn-common btn-rm" href="#" onclick="app.consultarReserva();">Consultar</a>
+              </div>
+            </div>
+          </div>
+          <div id="campodoc" style="display: none;">
+            <form action="javascript:void(0);" method="POST" id="reserva-edit">
+              <p id="datosvuelo"></p>
+              <input type="text" id="documento" placeholder="Cedula de Ciudadania">
+              <input type="submit" value="Reservar" />
+            </form>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <table>
+                <tbody id="vuelos"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <br>
+        <a id="btnback" style="display: none;" href="#" class="btn btn-common btn-rm" onclick="app.Volver();">Volver</a>
+      </div>
+    </section>
+
+    <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p>© Desarrollado por <a href="http://fb.com/thersanbo" rel="nofollow">RFSB</a></p>  
+          </div>
+        </div>
+      </div>
+    </div>} 
+  </body>
+</html>
